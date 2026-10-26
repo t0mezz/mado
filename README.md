@@ -22,5 +22,3 @@ Open the printed URL (it opens automatically). `Ctrl+C` stops it. No install —
 
 - [mado.py](/Users/tomkorbmacher/src/mado/mado.py) — tiny server for the one file
 - [index.html](/Users/tomkorbmacher/src/mado/index.html) — the preview editor, markdown renderer included, no dependencies
-
-- [x] test haha
