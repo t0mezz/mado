@@ -1,2 +1,4 @@
 #!/bin/sh
-exec python3 "$(dirname "$0")/mado.py" "$@"
+# resolve symlinks so `mado` works when linked into PATH
+self=$(readlink -f "$0" 2>/dev/null || python3 -c 'import os,sys;print(os.path.realpath(sys.argv[1]))' "$0")
+exec python3 "$(dirname "$self")/mado.py" "$@"

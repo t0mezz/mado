@@ -8,6 +8,15 @@ One markdown file, edited in its live preview. One window, nothing else.
 ./mado welcome.md
 ```
 
+To run it from anywhere, add it to your PATH (macOS and Ubuntu):
+
+```sh
+./install.sh
+mado notes.md
+```
+
+This symlinks `mado` into `~/.local/bin` and adds that to your shell rc if needed. Needs `python3` (Ubuntu: `sudo apt install python3`). On Linux use `Ctrl` where this README says `Cmd`.
+
 Open the printed URL (it opens automatically). `Ctrl+C` stops it. No install — Python 3 standard library only.
 
 ## Use
@@ -20,5 +29,5 @@ Open the printed URL (it opens automatically). `Ctrl+C` stops it. No install —
 
 ## Files
 
-- [mado.py](/Users/tomkorbmacher/src/mado/mado.py) — tiny server for the one file
-- [index.html](/Users/tomkorbmacher/src/mado/index.html) — the preview editor, markdown renderer included, no dependencies
+- [mado.py](mado.py) — tiny server for the one file
+- [index.html](index.html) — the preview editor, markdown renderer included, no dependencies
